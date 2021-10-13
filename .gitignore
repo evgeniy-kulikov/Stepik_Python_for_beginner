@@ -1,0 +1,5 @@
+# my_gitignore
+venv
+.idea
+/main.py
+/Stepik_Python_for_beginner.rar
