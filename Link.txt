@@ -1,0 +1,21 @@
+HTTPS
+https://github.com/evgeniy-kulikov/Stepik_Python_for_beginner.git
+
+SSH
+git@github.com:evgeniy-kulikov/Stepik_Python_for_beginner.git
+
+
+
+create a new repository on the command line:
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/evgeniy-kulikov/Stepik_Python_for_beginner.git
+git push -u origin main
+
+
+push an existing repository from the command line:
+git remote add origin https://github.com/evgeniy-kulikov/Stepik_Python_for_beginner.git
+git branch -M main
+git push -u origin main
