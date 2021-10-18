@@ -9,17 +9,7 @@
 # n = float(input())
 # n = int(input(''))
 # a, b, c = (input('')), (input('')), (input(''))
-
-# string = input('')
-# day_sat = 'суббота'
-# day_sun = 'воскресенье'
-# if day_sat in string:
-#     print('YES')
-# elif day_sun in string:
-#     print('YES')
-# else:
-#     print('NO')
-
+# x, y, x_1, y_1 = int(input()), int(input()), int(input()), int(input())
 
 
 
