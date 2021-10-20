@@ -54,6 +54,19 @@ if 0 < n <= 10:
 else:
     print('ошибка')
 
+# Другое решение
+n = int(input())
+if not 0 < n < 11:
+    print('ошибка')
+elif n < 4:
+    print(n*'I')
+elif n == 4:
+    print('IV')
+elif n < 9:
+    print('V' + (n-5)*'I')
+elif n < 11:
+    print((10-n)*'I' + 'X')
+
 # Задача 05:
 # YES or NO вот в чем вопрос
 # Напишите программу, которая принимает на вход число и в зависимости от условий выводит текст «YES», либо «NO».
@@ -89,6 +102,13 @@ if abs(x - x_1) == abs(y - y_1):
 else:
     print('NO')
 
+# Другое решение
+x1, y1, x2, y2 = int(input()), int(input()), int(input()), int(input())
+if (x1 - y1 == x2 - y2) or (x1 + y1 == x2 + y2):
+    print('YES')
+else:
+    print('NO')
+
 # Задача 07:
 # Шахматная доска
 # Ход коня
@@ -105,6 +125,13 @@ elif (abs(x - x_1) == 2) and (abs(y - y_1) == 1):
     print('YES')
 else:
     print('NO')
+
+# Другое решение
+x1, y1, x2, y2 = int(input()), int(input()), int(input()), int(input())
+if (x2 - x1) * (y2 - y1) == 2 or (x2 - x1) * (y2 - y1) == -2:
+    print("YES")
+else:
+    print("NO")
 
 # Задача 08:
 # Шахматная доска
