@@ -11,13 +11,10 @@
 # n = int(input(''))
 # a, b, c = (input('')), (input('')), (input(''))
 # x, y, x_1, y_1 = int(input()), int(input()), int(input()), int(input())
-# 5 x 1 = 5
-n = int(input())
-for i in range(1, 11):
-    print(f'{n} x {i} =', n * i)
+# for i in range(10):
+# from math import sqrt
 
-n = int(input())
-for i in range(1, 11):
-    print(f'{n} x {i} = {n*i}')
-
-
+# преобразовать список my_list в строку my_str
+my_list = [1, "a", 2, 'b']
+my_str = ''.join(str(i) for i in my_list)
+print(my_str)
