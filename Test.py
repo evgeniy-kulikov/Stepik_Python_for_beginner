@@ -14,10 +14,8 @@
 # for i in range(10):
 # from math import sqrt
 
+# Задача 0:
+#
+# Напишите программу,
+# input: На вход программе подается
 
-user_text = input()
-n = 0
-while user_text != 'стоп' and user_text != 'хватит' and user_text != 'достаточно':
-    n += 1
-    user_text = input()
-print(n)
