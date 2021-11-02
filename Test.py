@@ -14,10 +14,34 @@
 # for i in range(10):
 # from math import sqrt
 
+# Задача 07:
+# Существуют монеты с номиналами 1, 5, 10, 25.
+# Напишите программу, которая определяет какое минимальное количество монет нужно заплатить продавцу.
+# input: На вход программе подается одно натуральное число, цена за товар.
 
-user_text = input()
-n = 0
-while user_text != 'стоп' and user_text != 'хватит' and user_text != 'достаточно':
-    n += 1
-    user_text = input()
-print(n)
+coin = 0
+residue = 0
+price = int(input())
+
+if price >= 25:
+    coin = price // 25
+    residue = price % 25
+    if 10 < residue < 25:
+        coin += residue // 10
+        residue %= 10
+        if 5 < residue < 10:
+            coin += residue // 5
+        residue %= 5
+        if 0 < residue < 5:
+            coin += residue
+
+if price < 25:
+    coin += price // 10
+    residue = price % 10
+    if 5 <= residue < 10:
+        coin += residue // 5
+        residue %= 5
+    if 0 < residue < 5:
+        coin += residue
+print(coin)
+
