@@ -14,7 +14,10 @@
 # for i in range(10):
 # from math import sqrt
 
-# преобразовать список my_list в строку my_str
-my_list = [1, "a", 2, 'b']
-my_str = ''.join(str(i) for i in my_list)
-print(my_str)
+
+user_text = input()
+n = 0
+while user_text != 'стоп' and user_text != 'хватит' and user_text != 'достаточно':
+    n += 1
+    user_text = input()
+print(n)

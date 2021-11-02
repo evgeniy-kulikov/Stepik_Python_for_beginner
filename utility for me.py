@@ -20,9 +20,10 @@ print(st.index('b'))  # 1
 print(st[2])  # c
 
 # печать в одну строку в теле цикла
-# n = int(input())
-# for i in range(n):
-#     print(n, end=' ')
+n = int(input())
+for i in range(n):
+    print(n, end=' ')
 
 # преобразовать список my_list в строку my_str
+my_list = []
 my_str = ''.join(str(i) for i in my_list)
