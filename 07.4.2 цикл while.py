@@ -109,10 +109,10 @@ price = int(input())
 if price >= 25:
     coin = price // 25
     residue = price % 25
-    if 10 < residue < 25:
+    if 10 <= residue < 25:
         coin += residue // 10
         residue %= 10
-        if 5 < residue < 10:
+        if 5 <= residue < 10:
             coin += residue // 5
         residue %= 5
         if 0 < residue < 5:
@@ -126,4 +126,21 @@ if price < 25:
         residue %= 5
     if 0 < residue < 5:
         coin += residue
+print(coin)
+
+# Чужое решение (однозначно лучшее!)
+price = int(input())
+coin = 0
+while price >= 25:
+    coin += 1
+    price = price - 25
+while price >= 10:
+    coin += 1
+    price = price - 10
+while price >= 5:
+    coin += 1
+    price = price - 5
+while price >= 1:
+    coin += 1
+    price = price - 1
 print(coin)
