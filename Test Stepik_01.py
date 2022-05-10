@@ -1,16 +1,12 @@
-
-#  10 b + 5 k + 0.5 t = 100
-total = 0
-for b in range(1, 10):
-    for k in range(1, 20):
-        for t in range(2, 101, 2):
-            if 10 * b + 5 * k + 0.5 * t == 100 and b + k + t == 100:
-                print(f'быков = {b}, коров = {k}, телят = {t}')
-                total += 1
-print(f'total result: {total}')
-
-# быков = 1, коров = 9, телят = 90
-# total result: 1
-
-
+a, b = int(input()), int(input())
+num_sum_div, num_max = 0, None
+for num in range(a, b + 1):
+    sum_list_div = 0
+    for k in range(1, num + 1):
+        if num % k == 0:
+            sum_list_div += k
+    if sum_list_div >= num_sum_div:
+        num_sum_div = sum_list_div
+        num_max = num
+print(num_max, num_sum_div)
 
