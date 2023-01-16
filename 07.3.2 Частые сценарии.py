@@ -12,6 +12,7 @@ for i in range(a, b + 1):
 print(count)
 
 # Другое решение (оказывается можно в кубы не возводить !!!)
+a, b = int(input()), int(input())
 count = 0
 for i in range(a, b + 1):
     if i % 10 == 4 or i % 10 == 9:

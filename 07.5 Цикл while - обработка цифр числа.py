@@ -1,4 +1,4 @@
-""" 07.5.1 цикл while. обработка цифр числа"""
+""" 07.5.1 цикл while. Обработка цифр числа"""
 
 #  Пусть дано натуральное число n. Тогда:
 #   результатом операции n % 10 – является последняя цифра числа;
@@ -20,8 +20,9 @@ while num != 0:
     last_digit = num % 10
     if last_digit == 7:
         has_seven = True
+        break
     num = num // 10
-if has_seven == True:
+if has_seven:
     print('YES')
 else:
     print('NO')

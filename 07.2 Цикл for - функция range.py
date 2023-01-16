@@ -68,12 +68,7 @@ for i in range(m, n + 1):
 
 # Задача 05:
 # Таблица умножения
-n = int(input())
+num = int(input())
 for i in range(1, 11):
-    print(f'{n} x {i} =', n * i)
-
-# Другое решение
-n = int(input())
-for i in range(1, 11):
-    print(f'{n} x {i} = {n*i}')
+    print(f'{num} x {i} = {num * i}')
 

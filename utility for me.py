@@ -27,3 +27,7 @@ for i in range(n):
 # преобразовать список my_list в строку my_str
 my_list = []
 my_str = ''.join(str(i) for i in my_list)
+
+# Тернарный оператор
+s = [1, 3, 8, 9]
+print((False, True)[1 in s])

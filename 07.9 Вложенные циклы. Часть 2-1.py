@@ -6,10 +6,10 @@
 n = int(input())
 count = 1
 for i in range(1, n + 1):
-    print()  # печатаем новую строку
     for m in range(i):
         print(count, end=' ')
         count += 1
+    print()  # печатаем новую строку
 # 1
 # 2 3
 # 4 5 6
@@ -30,13 +30,14 @@ for i in range(1, n + 1):
         print(m, end='')
     for r in reversed(range(1, i)):
         print(r, end='')
-    print()
+    print()  # печатаем новую строку
 # 1
 # 121
 # 12321
 # 1234321
 # 123454321
 # ...
+
 # решение без reversed(range())
 n = int(input())
 for i in range(1, n + 1):
