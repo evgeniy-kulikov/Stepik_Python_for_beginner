@@ -250,8 +250,8 @@ def quick_merge(list1, list2):
     return result
 
 # Само решение
-list1 = []  # Начальное состояние отсортированного списка
 n = int(input())
+list1 = []  # Начальное состояние отсортированного списка
 for _ in range(n):
     list2 = [int(i) for i in input().split()]  # ввод очередного списка
     list1 = quick_merge(list1, list2)  # поочередное формирование отсортированного списка

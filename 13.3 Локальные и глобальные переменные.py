@@ -95,9 +95,7 @@ print_texas()  # В Техасе обитает 5000 птиц.
 print_california()  # В Калифорнии обитает 5000 птиц.
 
 
-
 x = 5
-
 def add():
     global x
     x = 3
