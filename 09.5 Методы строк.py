@@ -21,7 +21,7 @@ s3.isalnum()  # False
 Метод возвращает значение True, если исходная строка является непустой и состоит только из буквенных символов
 и False в противном случае.
 s1 = 'ABCabc'
-s1.isdigit()  # True
+s1.isalpha()  # True
 s2 = 'abc123'
 s2.isdigit()  # False
 s3 = ''
